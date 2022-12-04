@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.row{
+    width: 100%;
+}
+.row::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+/* small device */
+@media (min-width: 576px){
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+  }
+/* Medium device */
+  @media (min-width: 768px){
+    #menu-section h2{
+      margin-bottom: 15px;
+    }
+    .card-body{
+      transition: .4s;
+    }
+    .card-body:hover{
+      transform: scale(1.1);
+}
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+  }
+
+   /* large device */
+  @media (min-width: 992px){
+  nav ul li{
+    text-align: right;
+    float: left;
+    margin: 0 20px;
+}
+  nav ul li a{
+  transition: .4s;
+}
+  nav ul li a:hover{
+    background: transparent !Important;
+    text-decoration: underline;
+    transform:scale(1.1);
+}
+  #banner-section{
+    position: relative;
+  }
+  .banner-text{
+    position:absolute;
+    margin-left:160px;
+    margin-top: -90px;
+  }
+  .banner-text p{
+    font-size: 30px !Important;
+  }
+  .btn{
+    font-size: 30px;
+  }
+  #menu-section h2{
+    margin-bottom: 15px;
+  }
+  .card-body{
+    transition: .4s;
+  }
+  .card-body:hover{
+    transform: scale(1.1);
+}
+hr {
+  clear: both;
+  visibility: hidden;
+}
+.last-section ul li{
+  text-align: justify !important;
+}
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+  }
+/* header design start here */
+  .container{
+    max-width: 1000px;
+    margin: auto;
+    background: #243b55;
+  }
+  header{
+    text-align: center;
+  }
+  .logo a img{
+    width:200px;
+  }
+  nav ul li{
+    display:block;
+  }
+  nav ul li a{
+    display:block;
+    text-decoration: none;
+    margin: 15px 0;
+    color:  #ff512f;
+    font-family: Arial;
+    font-size: 1.2rem;
+    padding: 8px 0;
+  }
+  nav ul li a:hover{
+    background:rgb(222, 221, 221);
+    border-radius: 5px;
+}
+  /* header design end here */
+
+  /* main design start here */
+
+   /* banner section design start here */
+   #banner-section{
+    background-image: url(/logo/bannerbackground.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 15%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   }
+   .banner-text{
+    text-align: center;
+   }
+   .banner-text p{
+    margin: 20px 0;
+    font-size: 1.4rem;
+    font-family: Arial;
+    color: white;
+    border-radius: 5px;
+    background:#0c4b54bb;
+}
+  .banner-text button{
+    background:linear-gradient( to left, #ff512f, #dd2476);
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+.banner-text button:hover{
+  transform: scale(1.1);
+}
+   /* banner section design start here */
+
+  /* menu section design start here  */
+  #menu-section{
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+  }
+  #menu-section h2{
+    color: #ff512f;
+    text-decoration: underline;
+    font-family:sans-serif;
+    font-weight: 300;
+  }
+  .card-body {
+    background: linear-gradient( to left, #ff512f, #dd2476);
+    padding: 20px 0;
+    border-radius: 8px;
+    display:block;
+    font-family: sans-serif;
+    line-height: 25px;
+    cursor: pointer;
+}
+  .card-body:hover{
+    box-shadow: white 0px 5px 15px;
+  }
+  .card-body img{
+    width:200px;
+    margin: 5px 0;
+  }
+  .card-body h3{
+    font-size: 16px;
+  }
+  .card-body p{
+    font-size: 12px;
+  }
+  /* menu section design end here  */
+
+   /* checkout section design start here  */
+.checkout-section{
+      text-align:center;
+}
+.checkout-section button{
+      padding: 5px;
+      background:linear-gradient( to left, #ff512f, #dd2476);
+      border:none;
+      border-radius: 5px;
+      color: white;
+      transition: .4s;
+}
+.checkout-section button:hover{
+  transform: scale(1.1);
+}
+    /* checkout section design end here  */
+
+    /* facilities section design start here  */
+#our-facilities{
+  text-align: center;
+  margin: 20px 0;
+}
+.text-section{
+  color: white;
+}
+.text-section h1{
+  font-family: sans-serif;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+}
+.text-section p{
+  font-family: Arial;
+  font-weight: 300;
+  padding: 1%;
+}
+.facilities-card{
+  text-align: center;
+  color: white;
+}
+.facilities-card-text i{
+  color:white;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.facilities-card-text i{
+  background: #dd2476;
+  padding: 10px;
+  border-radius: 50%;
+}
+.facilities-card-text h3{
+  font-family: sans-serif;
+  margin: 5px 0;
+  font-weight: 400;
+}
+.facilities-card-text p{
+  font-family: Arial;
+  font-weight: 300;
+  margin: 5px 0;
+}
+.facilities-card-text h4{
+  font-family: sans-serif;
+  font-size: 18px;
+  color:rgb(154, 152, 158);
+}
+#see-more{
+  font-size: 16px;
+  color: aqua;
+  background: none;
+  cursor: pointer;
+}
+.facilities-photo img{
+  width: 100%;
+  margin: 10px 0;
+}
+    /* facilities section design end here  */
+
+  /* main design end here */
+
+  /* footer design start here */
+#footer-section{
+  background:rgb(56, 46, 46);
+  text-align: center;
+}
+#media-icon{
+  text-align: center;
+  margin: 20px 0;
+}
+.btn {
+  width: 35px;
+  height: 35px;
+  border-radius:50%;
+  border: none;
+  margin: 0 7px;
+  transition: .3s;
+  font-size: 25px;
+  cursor: pointer;
+}
+.btn:hover{
+  transform: scale(1.1);
+}
+#facebook{
+  color: blue;
+}
+#youtube{
+  color: red;
+}
+#linkedin{
+  color:rgb(38, 38, 245);
+}
+.last-section{
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px 0;
+}
+.last-section ul li{
+  margin: 8px 0;
+  color: rgb(174, 172, 172);
+  text-align: center;
+  cursor: pointer;
+}
+.last-section ul li:hover{
+  text-decoration: underline;
+  color: white;
+}
+hr{
+  border: 1px solid white;
+}
+.copyright{
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  font-family: Arial;
+}
+.copyright h6{
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 3px;
+  color: #ff2a00;
+}
+.copyright p{
+  font-size: 15px;
+  font-weight: 200;
+  color: rgb(174, 172, 172);
+}
+  /* footer design end here */
